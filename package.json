@@ -1,0 +1,28 @@
+{
+  "name": "serverless-elasticsearch",
+  "version": "1.0.0",
+  "description": "Servless plugin to support ES clusters",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekgebhard/serverless-elasticsearch.git"
+  },
+  "keywords": [
+    "Serverless",
+    "Plugin",
+    "AWS",
+    "Elastic",
+    "Search",
+    "Elasticsearch",
+    "Management"
+  ],
+  "author": "Derek Gebhard",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/derekgebhard/serverless-elasticsearch/issues"
+  },
+  "homepage": "https://github.com/derekgebhard/serverless-elasticsearch#readme"
+}
