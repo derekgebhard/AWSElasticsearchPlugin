@@ -4,7 +4,9 @@
   "description": "Servless plugin to support ES clusters",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint --ignore-path .gitignore .",
+    "test": "jest tests/unit/*",
+    "coverage": "jest --collectCoverageFrom=src/**.js --coverage tests/unit/*"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,12 @@
   "bugs": {
     "url": "https://github.com/derekgebhard/serverless-elasticsearch/issues"
   },
-  "homepage": "https://github.com/derekgebhard/serverless-elasticsearch#readme"
+  "homepage": "https://github.com/derekgebhard/serverless-elasticsearch#readme",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "jest": "^23.6.0"
+  }
 }
