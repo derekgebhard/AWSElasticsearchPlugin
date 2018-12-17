@@ -23,10 +23,9 @@ describe('Test Cases for Elasticsearch Plugin class', () => {
     const plugin = new EsPlugin(serverlessMock, optionsMock);
     expect(serverlessMock.getProvider.mock.calls.length).toBe(1);
     expect(serverlessMock.getProvider.mock.calls[0][0]).toBe('aws');
-    expect(serverlessMock.getProvider().getStage.mock.calls.length).toBe(1);
     expect(plugin.serverless).toBe(serverlessMock);
     expect(plugin.options).toBe(optionsMock);
-    expect(plugin.stage).toBe('dev');
-    expect(plugin.hooks['after:package:initialize']).toBeDefined();
+    expect(plugin.hooks).toBeDefined();
+    expect(plugin.commands).toBeDefined();
   });
 });
